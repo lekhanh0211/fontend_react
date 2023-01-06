@@ -1,5 +1,18 @@
+
+// let api=()=>{
+//     API_BASE_URL: "http://localhost:8080/",
+// };
+// let app=()=>{
+//     ROUTER_BASE_NAME: null
+// }
+
+// module.exports = {
+//     api,app
+// }
+
+
 export default {
-    api: {
+     api: {
         API_BASE_URL: "http://localhost:8080/",
         ROUTER_BASE_NAME: null,
     },

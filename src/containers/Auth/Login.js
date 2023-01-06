@@ -72,7 +72,7 @@ class Login extends Component {
                                 <input type={this.state.isShowPass ? "text" : "password"} className='form-control' placeholder='Enter Password' value={this.state.password}
                                     onChange={(event) => { this.handleOnChangePass(event) }} />
                                 <span onClick={() => { this.handleShowHidePass() }}>
-                                    <i class={this.state.isShowPass ? "fas fa-eye" : "fas fa-eye-slash"}></i>
+                                    <i className={this.state.isShowPass ? "fas fa-eye" : "fas fa-eye-slash"}></i>
                                 </span>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ class Login extends Component {
                             {this.state.errMessage}
                         </div>
                         <div className='col-12'>
-                            <button className='btn-login' onClick={() => { this.handleLogin() }} >Login</button>
+                            <button type='submit' className='btn-login' onClick={() => { this.handleLogin() }} >Login</button>
                         </div>
                         <div className='col-12 mt-5'>
                             <span className='forgot'>Forgot your password ?</span>
@@ -89,9 +89,9 @@ class Login extends Component {
                             <span>Or Login with</span>
                         </div>
                         <div className='col-12 social'>
-                            <i class="fab fa-facebook facebook"></i>
-                            <i class="fab fa-google-plus-square google"></i>
-                            <i class="fab fa-linkedin linkedin"></i>
+                            <i className="fab fa-facebook facebook"></i>
+                            <i className="fab fa-google-plus-square google"></i>
+                            <i className="fab fa-linkedin linkedin"></i>
                         </div>
                     </div>
                 </div>
